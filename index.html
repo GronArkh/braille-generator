@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="icon" type="image/svg+xml" href="/braille/favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="/braille/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="shortcut icon" href="/braille/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/braille/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/braille/favicon/site.webmanifest">
+    <meta name="apple-mobile-web-app-title" content="QR codes">
+
+    <title>Шрифт Брайля</title>
+   <meta name="description" content="Лучший бесплатный генератор QR-кодов, созданный для дизайнеров и маркетологов. Создавайте чистые векторные QR-коды (SVG), идеально совместимые с Adobe Illustrator, CorelDRAW, Figma, а также скачивайте в высоком разрешении PNG. Добавляйте логотип, настраивайте дизайн, цвет, скругление точек и форму. Идеальный инструмент для создания профессиональных QR-кодов для печати и веба.">
+    <meta name="keywords" content="генератор qr-кодов, создать qr-код, векторный qr-код, qr-код svg, qr-код в векторе, qr-код для дизайнера, qr-код для печати, qr-код для иллюстратора, qr-код для adobe illustrator, qr-код для корела, qr-код для coreldraw, qr-код для фигмы, qr-код для figma, qr-код png, qr-код с прозрачным фоном, qr код высокое разрешение, чистый qr-код, профессиональный qr-код, лучший генератор qr-кодов, бесплатный генератор qr-кодов, qr-код с логотипом, кастомный qr-код, qr-код для телеграм, qr-код для вк, qr-код для whatsapp, куар код, создать куар код, qr code generator for designers, vector qr code, qr code svg, красивый qr, сокращение ссылок">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/braille/style.min.css">
+  </head>
+  <body>
+      <div class="header-container">
+    <div class="header-content">
+      <img src="/braille/images/_Braille.svg" 
+           alt="Логотип" 
+           class="header-logo">
+      <div class="header-text">
+        <h1 class="header-title">Макеты табличек Брайля</h1>
+        <h2 class="header-subtitle">Бесплатно создать и скачать макет со шрифтом для слабовидящих ГОСТ Р 52131-2019</h2>
+      </div>
+    </div>
+  </div>
+      <div class="main-container">
+          <div class="container">
+              <div class="controls">
+                  <h2>Название организации:</h2>
+                   <textarea id="name-edit" placeholder="Введите название организации" maxlength="200" rows="3"></textarea>  
+                  
+                  <h2>Режим работы:</h2> 
+                  <textarea id="mode-of-operation-details-edit" placeholder="Введите режим работы" maxlength="200" rows="3"></textarea> 
+  
+                  <h2>Адрес организации:</h2>
+                  <textarea id="address-edit" placeholder="Введите адрес организации" maxlength="100" rows="1"></textarea>
+                  
+                  <h2>Размер таблички:</h2>
+                  <select id="size-select">
+                      <option value="400x300">400×300 мм</option>
+                      <option value="500x400">500×400 мм</option>
+                      <option value="600x400" selected>600×400 мм</option>
+                  </select>
+                  
+                  <button id="download-btn">Скачать макет SVG</button>
+              </div>
+              
+  <div class="canvas-wrapper">
+                  <div id="canvas-container">
+                      <canvas id="c"></canvas>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <div class="preloader">
+          <div class="preloader__inner">
+              <div class="preloader__spinner"></div>
+              <div class="preloader__text">Загрузка...</div>
+          </div>
+      </div>
+      <script src="/braille/jquery-2.1.0.min.js"></script>
+      <script src="/braille/fabric.min.js"></script> 
+      <script src="/braille/opentype.js"></script>
+      <script src="/braille/main.min.js"></script>
+      <script src="/braille/fabric.CurvesText.min.js"></script>
+    </body>
+    </html>
